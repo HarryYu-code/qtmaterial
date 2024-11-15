@@ -1,0 +1,50 @@
+{
+    // 使用 IntelliSense 了解相关属性。 
+    // 悬停以查看现有属性的描述。
+    // 欲了解更多信息，请访问: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "C++ Launch (Windows)",
+            "type": "cppvsdbg",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "program": "${workspaceFolder}/build/Desktop_Qt_6_6_3_MinGW_64_bit-Debug/SerialTool.exe",
+            "stopAtEntry": true,
+            // "symbolSearchPath": "C:\\Symbols;C:\\SymbolDir2",
+            "logging": {
+              "moduleLoad": false,
+              "trace": true
+            },
+            "console": "internalConsole",//internalConsole:使用vscode的调试控制台打印，integratedTerminal:使用vscode下的bash新建一个终端打印,externalTerminal:使用win的系统cmd独立vscode之外新建一个终端
+            "visualizerFile": "${workspaceFolder}/my.natvis",
+            "preLaunchTask": "build",  
+        },
+        {  
+            "name": "QT Launch",  
+            "type": "cppdbg",  
+            "request": "launch",  
+            "program": "${workspaceFolder}/build/Desktop_Qt_6_6_3_MinGW_64_bit-Debug/SerialTool.exe",  
+            "args": [],  
+            "stopAtEntry": true,  
+            "cwd": "${workspaceFolder}",  
+            "externalConsole": true,  //使用外部控制台打印qDebug
+            // "internalConsoleOptions"
+            "MIMode": "gdb",  
+            "miDebuggerPath": "E:/Qt/Tools/mingw1120_64/bin/gdb.exe"  ,//win下用此参数指定gdb时必须带.exe后缀
+            // "setupCommands": [  
+            //     {  
+            //         "description": "Enable pretty-printing for gdb",  
+            //         "text": "-enable-pretty-printing",  
+            //         "ignoreFailures": true  
+            //     }  
+            // ],  
+            "logging": {
+                "moduleLoad": false,
+                "trace": true
+              },
+            "preLaunchTask": "build",  
+            "showDisplayString": true
+        }  ,
+    ]
+}

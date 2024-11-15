@@ -1,0 +1,35 @@
+{
+    // 使用 IntelliSense 了解相关属性。 
+    // 悬停以查看现有属性的描述。
+    // 欲了解更多信息，请访问: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        
+        {  
+            "name": "QT example",  
+            "type": "cppdbg",  
+            "request": "launch",  
+            "program": "${workspaceFolder}/build/Desktop_Qt_6_6_3_MinGW_64_bit-Debug/examples/examples.exe",  
+            "args": [],  
+            "stopAtEntry": false,  
+            "cwd": "${workspaceFolder}",  
+            "externalConsole": false,  //使用外部控制台打印qDebug
+            // "internalConsoleOptions"
+            "MIMode": "gdb",  
+            "miDebuggerPath": "C:/Qt/Tools/mingw1120_64/bin/gdb.exe"  ,//win下用此参数指定gdb时必须带.exe后缀
+            // "setupCommands": [  
+            //     {  
+            //         "description": "Enable pretty-printing for gdb",  
+            //         "text": "-enable-pretty-printing",  
+            //         "ignoreFailures": true  
+            //     }  
+            // ],  
+            "logging": {
+                "moduleLoad": false,
+                "trace": true
+              },
+            "preLaunchTask": "build example",  
+            "showDisplayString": true
+        }  ,
+    ]
+}

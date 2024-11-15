@@ -1,0 +1,14 @@
+{
+    "files.associations": {
+        "qlabel": "cpp",
+        "new": "cpp",
+        "qstatusbar": "cpp",
+        "deque": "cpp",
+        "list": "cpp",
+        "string": "cpp",
+        "vector": "cpp",
+        "qradiobutton": "cpp",
+        "qevent": "cpp",
+        "qplaintextedit": "cpp"
+    }
+}
