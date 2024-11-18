@@ -2,3 +2,8 @@
 *.user
 build
 .cache
+/.vscode/*
+!/.vscode/*.bak
+!/.vscode/c_cpp_properties.json
+/script/env.sh
+/script/test.sh

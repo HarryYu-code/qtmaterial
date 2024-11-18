@@ -4,6 +4,13 @@
     "version": "2.0.0",
     "tasks": [
         {
+            "label": "build example",
+            "type": "shell",
+            "command": "./build_script.sh EXAMPLE",
+           
+            
+        },
+        {
             "label": "build",
             "type": "shell",
             "command": "./build_script.sh DEBUG",
